@@ -1,0 +1,585 @@
+/*================
+    Google fonts 
+ ==================*/
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ /*================
+     Global CSS 
+ ==================*/
+ body{
+ 	margin: 0;
+ 	padding: 0;
+ 	font-family: 'Lato', sans-serif;
+}
+h1{
+ font-family: 'Montserrat', sans-serif;
+}
+h2{
+  font-family: 'Lato', sans-serif;	
+}
+h3{
+  font-family: 'Montserrat', sans-serif;	
+}
+h4{
+  font-family: 'Lato', sans-serif;	
+}
+h5{
+  font-family: 'Raleway', sans-serif;	
+}
+ul li{
+  font-family: 'Raleway', sans-serif;
+}
+span{
+  font-family: 'Lato', sans-serif;
+}
+label{
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  font-family: 'Lato', sans-serif;   
+}
+a{
+  text-decoration: none;
+}
+
+/*===================
+    Header section
+ ====================*/
+header {
+    background: url(../image/pizza-bg.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 20px 0 10px;
+    position: relative;
+
+ }
+ header::before{
+    position: absolute;
+    content: "";
+    top: 21px;
+    left: 0;
+    border: 1px solid #ffba00;
+    width: 350px;
+    height: 70px;
+    background: #ffba00;
+ }
+ .navbar-nav{
+    padding-right: 60px;
+ }
+ .navbar-nav .nav-item{
+   margin: 0 22px;	
+ }
+.navbar-nav .nav-item .nav-link{
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    text-transform: capitalize;
+     transition: all 0.3s ease-in-out;
+ }
+ .navbar-nav .nav-item .nav-link::before{
+   position: absolute;
+   content: "";
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background: #ffba00;
+   transform: scaleX(0);
+   transition: all 0.3s ease-in-out;
+ }
+ .navbar-nav .nav-item .nav-link:hover::before{
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out;
+ }
+ .header-side{
+   position: relative;
+   padding: 200px 0;
+   z-index: 1;
+ }
+  .header-side::before{
+    position: absolute;
+    content: "";
+    top: 33%;
+    left: 0;
+    width: 100%;
+    height: 163px;
+    background: #ffba00;
+    z-index: -1;
+ }
+  .heading h1{
+    color: #fff;
+    font-weight: 900;
+    display: block;
+    text-transform: uppercase;
+    font-size: 96px;
+ }
+ .heading label{
+    color: #fff;
+    display: block;
+    font-size: 97px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 72px;
+    letter-spacing: 7px;
+ }
+ .header-side .btn-hash{
+    border: 2px solid #fff;
+    color: #fff;
+    background: #ffba00;
+    padding: 14px 0px 5px 58px;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-top: 22%;
+    display: block;
+    width: 240px;	
+ }
+
+ /*===================
+    group2 section
+ ====================*/
+.group2-section{
+   position: relative;
+   padding: 80px 0;
+   background: #242424;
+}
+.group2-section::before{
+    position: absolute;
+    content: "";
+    top: 34.5%;
+    left: 11%;
+    width: 51%;
+    height: 26%;
+    background: #ffba00;
+}
+.group2-section h3{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 200;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 60px;
+    top: 262px;
+}
+.group2-section .col-lg-2{
+  padding: 0;
+  margin: 0;
+}
+.group2-section .col-lg-4{
+  padding: 0;
+  margin: 0;
+}
+.group2-section .col-lg-6{
+  padding: 0;
+  margin: 0;
+}
+.group-details{
+    position: absolute;
+    padding: 0 222px 0 0px;
+    width: 51.5%;
+    margin-top: 58px;
+    margin-left: 58px;
+}
+.group-details h2{
+     color: #fff;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 40px;   
+}
+.group-details p span{
+    font-weight: 900;
+    padding-right: 12px;
+}
+.group-details p{
+     color: #fff;
+    font-size: 26px;
+    font-weight: 400;   
+}
+.group2-section .simage{
+    width: 100%;
+    height: 92%;
+}
+
+ /*===================
+    group3 section
+ ====================*/
+.group3-section{
+   padding: 115px 0 120px;
+}
+.describe h1{
+    font-weight: 800;
+    color: #ffba00;
+    font-size: 33px;
+    margin-bottom: 23px;
+}
+.describe h1 span{
+   font-weight: 900; 
+}
+.describe p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;  
+}
+
+ /*===================
+    group4 section
+ ====================*/
+.group4-section{
+  background: url(../image/pizza-bg-2.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 90px 0 75px;
+}
+.group4-section h1{
+    position: relative;
+    text-align: center;
+    color: #ffba00;
+    font-size: 53px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 220px;   
+}
+.group4-section h1::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: 37px;
+    width: 107%;
+    height: 130px;
+    background: transparent;
+    border: 2px solid #fff;
+}
+.group4-section h3{
+    color: #ffba00;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 60px; 
+}
+.group4-section h3 label{
+    font-weight: 300;
+    margin-right: -14px;
+}
+.menu-price{
+    position: relative;
+    z-index: 1;
+}
+.menu-price::before{
+    position: absolute;
+    content: "";
+    top: -74px;
+    left: -13%;
+    width: 186.5%;
+    height: 96%;
+    background: #ffba00;
+    z-index: -1;
+}
+.menu-price p{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400; 
+   line-height: 40px;
+   margin-bottom: 35px;
+}
+.menu-price p span{
+    display: block;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 500;
+}
+.price{
+    position: relative;
+    z-index: 1;
+}
+.price::before{
+    position: absolute;
+    content: "";
+    top: -11px;
+    left: 10%;
+    width: 31%;
+    height: 110%;
+    background: #ffda00;
+    z-index: -1;
+}
+.price h4{
+   color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 84px;
+    margin-top: 10px;
+}
+.details30{
+    position: relative;
+    margin-top: 40px;
+}
+.details30::before{
+    position: absolute;
+    content: "";
+    top: -20%;
+    left: -66%;
+    width: 245%;
+    height: 140%;
+    background: transparent;
+    border: 2px solid #fff;
+}
+.details30 p{
+    color: #fff;
+    margin: 8px 0;
+    font-weight: 300;
+}
+
+/*===================
+    group5 section
+ ====================*/
+.group5-section{
+   background: #242424;
+   padding: 75px 0; 
+}
+.group5-section h2{
+    color: #ffba00;
+    text-align: center;
+    margin-bottom: 24px;
+    word-spacing: 4px;
+}
+.group5-section h2 label{
+    font-weight: 900;
+}
+.group5-section h5 {
+    color: #c5c5c5;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 264px;
+    text-align: center;
+    line-height: 30px;   
+}
+.group5-section ul{
+  padding: 0;
+  text-align: center;
+}
+.group5-section ul li{
+  color: #fff;
+  list-style: none;
+  display: inline-block;
+  margin: 20px 10px 0 10px;
+}
+
+.group6-section{
+    position: relative;
+    background: url(../image/pizza-bg-3.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 90px 0 175px;
+    z-index: 1;
+}
+.group6-section::before{
+   position: absolute;
+    content: "";
+    top: 74%;
+    right: 14%;
+    width: 28%;
+    height: 9.5%;
+    background: #ffba00;
+}
+.group6-section h3{
+   text-align: right;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 150px;
+}
+.details{
+    position: relative;
+    padding: 0 115px;
+}
+.details::before{
+    position: absolute;
+    content: "";
+    background: #ffba00;
+    top: -70px;
+    right: 13%;
+    width: 76%;
+    height: 132%;
+    z-index: -1;
+}
+.details h2{
+    font-size: 38px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.details p{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600; 
+    margin-bottom: 60px; 
+}
+.details h4{
+    font-size: 30px;
+    text-align: right;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.details h4 span{
+    font-weight: 700;
+}
+.group6-section a{
+    position: relative;
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    padding-left: 22%;
+    display: block;
+    margin-top: 140px;
+}
+
+/*===================
+    group7 section
+ ====================*/
+.group7-section{
+	position: relative;
+   background: #242424;
+   padding: 110px 0 0; 
+}
+.group7-section::before{
+    position: absolute;
+    content: "";
+    width: 240px;
+    height: 178%;
+    top: 0;
+    left: 20%;
+    background: #ffba00;}
+.group7-section h1{
+   color: #ffba00;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;  
+}
+.group7-section .col-lg-6{
+	padding: 0;
+	margin: 0;
+}
+.group7-section .col-lg-3{
+	padding: 0;
+	margin: 0;
+}
+.cimage img{
+    position: relative;
+	width: 100%;
+}
+.cimage .image1{
+   width: 100%;
+    height: 451px;
+}
+.cimage .image2{
+    width: 100%;
+    height: 451px;	
+}
+ /*===================
+    group8 section
+ ====================*/
+.group8-section{
+   background: #242424;
+   padding: 105px 50px; 
+}
+.group8-section img{
+   display: block;
+    margin: 0 auto 40px;
+    width: 22%;
+}
+.para p{
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    padding-left: 168px;
+    line-height: 30px;
+}
+.para .p{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 80%;
+}
+.para2 h4{
+     color: #e7e4dd;
+    font-size: 20px;
+    font-weight: 300;
+}
+.para2 ul{
+ padding: 0;	
+}
+.para2 ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 4px 30px;
+}
+.para2 ul li i{
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    font-size: 22px;
+    color: #242424;
+    border-radius: 50%;	
+    transition: all 0.3s ease-in-out;
+}
+.para2 ul li i:hover{
+    background: #ffba00;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.para2 .h4{
+    color: #e7e4dd;
+    font-size: 20px;
+    font-weight: 300;
+}
+.para2 p{
+    color: #ffba00;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+ /*===================
+    footer section
+ ====================*/
+ footer{
+ 	padding: 70px 0 80px;
+ 	background: #483500;
+ }
+.footer-details h5{
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.footer-details p{
+    color: #fff;
+    font-weight: 300;
+    padding: 0 67px 0 0;
+    line-height: 26px;
+}
+.footer-details-2 h5{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.footer-details-2 ul{
+  padding: 0;
+}
+.footer-details-2 ul li{
+    list-style: none;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 5px 0;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.footer-details-2 ul li:hover{
+    cursor: pointer;
+    color: #ffba00;
+    transition: all 0.3s ease-in-out;
+}
